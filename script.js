@@ -42,6 +42,12 @@ var removeCol = function(){
 }
 document.getElementById("button4").addEventListener("click", removeCol);
 
+var changeColor = function(){
+	newColor = document.getElementById("select").option.value;
+	console.log(newColor);
+}
+document.getElementById("select").addEventListener("change", changeColor);
+
 
 
 
