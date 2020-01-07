@@ -25,6 +25,12 @@ var addCol = function(){
 }
 document.getElementById("button2").addEventListener("click", addCol);
 
+var removeRow = function(){
+	var table = document.getElementById("table");
+	table.deleteRow(0);
+	numRows--;
+}
+document.getElementById("button3").addEventListener("click", removeRow);
 
 
 
