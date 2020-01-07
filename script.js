@@ -32,6 +32,16 @@ var removeRow = function(){
 }
 document.getElementById("button3").addEventListener("click", removeRow);
 
+var removeCol = function(){
+	var table = document.getElementById("table");
+	for(let i = 0; i < numRows; i++){
+		var row = table.rows[i];
+		row.deleteCell(0);
+	}
+	numCols--;
+}
+document.getElementById("button4").addEventListener("click", removeCol);
+
 
 
 
