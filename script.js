@@ -42,12 +42,10 @@ var removeCol = function(){
 }
 document.getElementById("button4").addEventListener("click", removeCol);
 
-var changeColor = function(){
-	newColor = document.getElementById("select").option.value;
-	console.log(newColor);
+var SelectNewColor = function(){
+	newColor = document.getElementById("select").value	
 }
-document.getElementById("select").addEventListener("change", changeColor);
-
+document.getElementById("select").addEventListener("change", SelectNewColor);
 
 
 
